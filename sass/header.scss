@@ -1,0 +1,108 @@
+// ######################    HEADER    #####################
+
+header {
+	min-height: 900px;
+	background: url(../img/header_bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.header-block {
+	.header-menu {
+		padding-top: 50px;
+		margin-bottom: 244px;
+	}
+	h1 {
+		font: 700 $header_size $font_raleway;
+		color: $white_color;
+		line-height: $header_size;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 85px;
+		span {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 97px;
+				left: 255px;
+				display: inline-block;
+				width: 86px;
+				height: 2px;
+				background-color: $white_color;
+			}
+		}
+	}
+	p {
+		font: 400 22px $font_lato;
+		color: $white_color;
+		line-height: 30px;
+		letter-spacing: 1.2px;
+		text-align: center;
+		margin-bottom: 253px;
+	}
+}
+
+.logo {
+	float: left;
+	a {
+		display: inline-block;
+	}
+}
+
+.header-nav {
+	float: right;
+	padding-top: 4px;
+	ul {
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		list-style-type: none;
+	}
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 50px;
+	&:last-child {
+		margin-right: 70px;
+	}
+	a {
+		font: 500 14px $font_lato;
+		color: $white_color;
+		text-transform: uppercase;
+		text-decoration: none;
+		-webkit-transition: all .4s ease-in-out;
+		   -moz-transition: all .4s ease-in-out;
+		    -ms-transition: all .4s ease-in-out;
+		     -o-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		&:hover {
+			color: darken($white_color, 20%);
+			text-decoration: underline;
+		}
+	}
+}
+
+.scroll {
+	text-align: center;
+	a {
+		display: inline-block;
+		width: 92px;
+		height: 92px;
+		border: 3px solid #808d93;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		background: url(../img/arrow.png) no-repeat center;
+		-webkit-transition: all .4s ease-in-out;
+		   -moz-transition: all .4s ease-in-out;
+		    -ms-transition: all .4s ease-in-out;
+		     -o-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		&:hover {
+			border: 3px solid lighten($white_color, 10%);
+		}
+	}
+}

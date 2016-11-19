@@ -1,0 +1,44 @@
+// #####################    DOLORE    ####################
+
+#dolore {
+	position: relative;
+	min-height: 500px;
+	background: url(../img/dolore_bg.jpg) no-repeat center;
+}
+
+.dolore-info {
+	padding-top: 160px;
+	h3 {
+		font: 400 45px $font_lato;
+		color: $white_color;
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 7px;
+	}
+	p {
+		font: 100 22px $font_lato;
+		color: $white_color;
+		line-height: 28px;
+		margin-top: 0;
+		margin-bottom: 59px;
+	}
+	a {
+		font: 400 18px $font_lato;
+		color: $white_color;
+		-webkit-transition: all .3s ease-in-out;
+		   -moz-transition: all .3s ease-in-out;
+		    -ms-transition: all .3s ease-in-out;
+		     -o-transition: all .3s ease-in-out;
+		        transition: all .3s ease-in-out;
+		&:hover{
+			color: darken($white_color, 20%);
+			text-decoration: none;
+		}
+	}
+}
+
+.dolore-img {
+	position: absolute;
+	right: 280px;
+	bottom: 0;
+}

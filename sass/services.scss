@@ -1,0 +1,51 @@
+// #####################    SERVICES    ####################
+
+#services {
+	background-color: $white_color;
+}
+
+.services-block {
+	padding-top: 108px;
+	padding-bottom: 95px;
+	h3 {
+		@extend .ser-header;
+		margin-top: 0;
+		margin-bottom: 151px;
+		span {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 108px;
+				left: 80px;
+				display: inline-block;
+				width: 86px;
+				height: 2px;
+				background-color: $black_color;
+			}
+		}
+	}
+}
+
+.services-icon {
+	text-align: center;
+	&:nth-child(3) {
+		padding-top: 20px;
+	}
+}
+
+.services-info {
+	padding-top: 24px;
+	text-align: center;
+	h4 {
+		font: 400 24px $font_lato;
+		color: $black_color;
+		margin-top: 0;
+		margin-bottom: 28px;
+	}
+	p {
+		font: 400 $text_size $font_lato;
+		color: $black_color;
+		line-height: 30px;
+	}
+}

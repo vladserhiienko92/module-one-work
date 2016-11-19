@@ -1,12 +1,64 @@
 // #######################    MAIN    ######################
 
-// --------------------- Variables -------------------------
+// --------------------- Variables and Mixins ---------------
 
+$font_raleway: 'Raleway', sans-serif;
+$font_lato: 'Lato', sans-serif;
+$header_size: 48px;
+$subhead_size: 35px;
+$text_size: 16px;
+$white_color: #fff;
+$black_color: #222222;
 
+@mixin button() {
+	display: inline-block;
+	width: 370px;
+	height: 60px;
+	border: 3px solid $black_color;
+	background: $white_color;
+	text-align: center;
+	font: 400 24px $font_lato;
+	line-height: 52px;
+	color: $black_color;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+	    -ms-transition: all .3s ease-in-out;
+	     -o-transition: all .3s ease-in-out;
+	        transition: all .3s ease-in-out;
+}
 
 // --------------------- General Styles --------------------
 
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
 
+.container {
+	width: 100%;
+	max-width: 1170px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.ser-header {
+	font: 700 $subhead_size $font_raleway;
+	color: $black_color;
+	text-align: center;
+	text-transform: uppercase;
+}
 
 // --------------------- Imports ---------------------------
 
+@import "header.scss";
+@import "services.scss";
+@import "dolore.scss";
+@import "our-work.scss";
+@import "footer.scss";
